@@ -30,7 +30,7 @@ public class Algorithms {
         }
 
         int mid = (i + j) / 2;
-        int sum = 0, leftMaxSUM = Integer.MIN_VALUE;
+        int sum = 0, leftMaxSUM = 0;
 
         for (int l = mid; l >= i; l--) {
             sum += nums[l];
@@ -39,7 +39,7 @@ public class Algorithms {
             }
         }
 
-        int rightMaxSUM = Integer.MIN_VALUE;
+        int rightMaxSUM = 0;
         sum = 0;
         for (int l = mid + 1; l <= j; l++) {
             sum += nums[l];

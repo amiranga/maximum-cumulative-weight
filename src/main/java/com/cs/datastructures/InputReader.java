@@ -17,7 +17,7 @@ public class InputReader {
                 ints[i] = Integer.parseInt(scanner.nextLine());
             }
         } catch (Exception e) {
-            System.out.println(DEFAULT_ERROR_MESSAGE);
+            //Do nothing
         }
         return ints;
     }
